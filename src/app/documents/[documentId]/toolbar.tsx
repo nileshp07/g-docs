@@ -13,6 +13,7 @@ import {Separator} from '@/components/ui/separator';
 import {useEditorStore} from '@/store/use-editor-store';
 import {DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger} from '@/components/ui/dropdown-menu';
 import {Dialog, DialogContent, DialogFooter, DialogHeader, DialogTitle} from '@/components/ui/dialog';
+import {Tooltip, TooltipContent, TooltipProvider, TooltipTrigger} from '@/components/ui/tooltip';
 import {
 	AlignCenterIcon,
 	AlignJustifyIcon,
@@ -41,7 +42,6 @@ import {
 	PlusIcon,
 	ListCollapseIcon,
 } from 'lucide-react';
-import {Tooltip, TooltipContent, TooltipProvider, TooltipTrigger} from '@/components/ui/tooltip';
 
 const LineHeightButton = () => {
 	const {editor} = useEditorStore();
