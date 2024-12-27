@@ -4,8 +4,8 @@ import {usePaginatedQuery} from 'convex/react';
 import {api} from '../../../convex/_generated/api';
 
 import {Navbar} from './navbar';
-import {TemplatesGallery} from './templates-gallery';
 import {DocumentsTable} from './documents-table';
+import {TemplatesGallery} from './templates-gallery';
 
 export default function Home() {
 	const {results, status, loadMore} = usePaginatedQuery(api.documents.get, {}, {initialNumItems: 5});
